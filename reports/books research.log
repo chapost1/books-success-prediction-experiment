@@ -1,0 +1,63 @@
+Traceback (most recent call last):
+  File "/Users/shahartal/Desktop/test/venv/lib/python3.9/site-packages/jupyter_cache/executors/utils.py", line 51, in single_nb_execution
+    executenb(
+  File "/Users/shahartal/Desktop/test/venv/lib/python3.9/site-packages/nbclient/client.py", line 1204, in execute
+    return NotebookClient(nb=nb, resources=resources, km=km, **kwargs).execute()
+  File "/Users/shahartal/Desktop/test/venv/lib/python3.9/site-packages/nbclient/util.py", line 84, in wrapped
+    return just_run(coro(*args, **kwargs))
+  File "/Users/shahartal/Desktop/test/venv/lib/python3.9/site-packages/nbclient/util.py", line 62, in just_run
+    return loop.run_until_complete(coro)
+  File "/Users/shahartal/opt/anaconda3/lib/python3.9/asyncio/base_events.py", line 642, in run_until_complete
+    return future.result()
+  File "/Users/shahartal/Desktop/test/venv/lib/python3.9/site-packages/nbclient/client.py", line 663, in async_execute
+    await self.async_execute_cell(
+  File "/Users/shahartal/Desktop/test/venv/lib/python3.9/site-packages/nbclient/client.py", line 965, in async_execute_cell
+    await self._check_raise_for_error(cell, cell_index, exec_reply)
+  File "/Users/shahartal/Desktop/test/venv/lib/python3.9/site-packages/nbclient/client.py", line 862, in _check_raise_for_error
+    raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
+nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
+------------------
+!pip install pydot
+!pip install pydotplus
+from bs4 import BeautifulSoup
+from bs4.element import Tag as HtmlTag
+import requests
+import os
+from random import randint
+import time
+from time import sleep
+from abc import ABC, abstractmethod
+from enum import Enum
+from functools import partial
+from typing import Callable, List
+from numbers import Number
+import pandas as pd
+import numpy as np
+from IPython.display import display
+import seaborn as sns
+import matplotlib.pyplot as plt
+from sklearn.preprocessing import LabelEncoder
+from IPython.display import Image, display  
+import pydotplus 
+from scipy import misc
+from sklearn import metrics
+from sklearn.model_selection import train_test_split
+from sklearn import tree
+from sklearn.model_selection import GridSearchCV
+from sklearn.metrics import make_scorer
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.metrics import f1_score
+------------------
+
+[0;31m---------------------------------------------------------------------------[0m
+[0;31mModuleNotFoundError[0m                       Traceback (most recent call last)
+Input [0;32mIn [1][0m, in [0;36m<cell line: 15>[0;34m()[0m
+[1;32m     13[0m [38;5;28;01mfrom[39;00m [38;5;21;01mtyping[39;00m [38;5;28;01mimport[39;00m Callable, List
+[1;32m     14[0m [38;5;28;01mfrom[39;00m [38;5;21;01mnumbers[39;00m [38;5;28;01mimport[39;00m Number
+[0;32m---> 15[0m [38;5;28;01mimport[39;00m [38;5;21;01mpandas[39;00m [38;5;28;01mas[39;00m [38;5;21;01mpd[39;00m
+[1;32m     16[0m [38;5;28;01mimport[39;00m [38;5;21;01mnumpy[39;00m [38;5;28;01mas[39;00m [38;5;21;01mnp[39;00m
+[1;32m     17[0m [38;5;28;01mfrom[39;00m [38;5;21;01mIPython[39;00m[38;5;21;01m.[39;00m[38;5;21;01mdisplay[39;00m [38;5;28;01mimport[39;00m display
+
+[0;31mModuleNotFoundError[0m: No module named 'pandas'
+ModuleNotFoundError: No module named 'pandas'
+
