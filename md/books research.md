@@ -255,9 +255,9 @@ def extract_parentheses_value(string: str) -> str:
 Here is a good example that shows how the shelves page is not showing the right books while the user is not signed in (we will talk about shelves later on).
 </p>
 
-![not_signed_in.jpeg](attachment:not_signed_in.jpeg)
+<img src="images/1.jpeg"/>
 
-![signed_in.jpeg](attachment:signed_in.jpeg)
+<img src="images/2.jpeg"/>
 
 <a id='authentication_class'></a>
 <h3>Authentication Class</h3>
@@ -355,7 +355,7 @@ Right on first sight we could mark ourselves data which we knew we are going to 
 The elements we saw right away:<br>
 </p>
 
-![first_glance_at_book.png](attachment:first_glance_at_book.png)
+<img src="images/3.png"/>
 
 </p>
 At this phase we asked ourselves 2 questions:<br>
@@ -383,7 +383,7 @@ The first thing we wanted to have is connection to the author, we knew that book
 Luckily for us - The name of the author was also link to the author's page.
 </p>
 
-![book_to_author.png](attachment:book_to_author.png)
+<img src="images/4.png"/>
 
 <p>
 The exploration in the author's page then began.<br>
@@ -398,9 +398,9 @@ While we ere exploring the author's page we found the following data which we de
 </ul>
 </p>
 
-![author_page_first_glance.png](attachment:author_page_first_glance.png)
+<img src="images/5.png"/>
 
-![authort_2.png](attachment:authort_2.png)
+<img src="images/6.png"/>
 
 <p>
 Now felt more confident about the data we have, but then we recalled one field that caught our interest in book page, which it was the "Want to Read" button at the book's page.<br>
@@ -408,14 +408,14 @@ We wandered, is there any way we could get the amount of people interested in re
 Back in the book's page we pressed the "Want to Read" button, that revealed a new field of interest to us - "Currently reading".
 </p>
 
-![want_to_read_pressed.png](attachment:want_to_read_pressed.png)
+<img src="images/7.png"/>
 
 <p>
 But still, we did not knew how to get to the number of how many users want to read the book or currently reading the book.<br>
 So we kept exploring the book's page up to the point where we pressed the "see top shelves..." hyperlink, there we could finally get the numbers we wanted, Since both the "to read" and "currently reading" were actually tagged in the shelves.
 </p>
 
-![top_shelves.png](attachment:top_shelves.png)
+<img src="images/8.png"/>
 
 <h4>Great!</h4>
 <p>
@@ -735,25 +735,25 @@ So we went on and thought about what could be the best way to get different type
 Great, We know how to get a great scale of books, So we decided to check how does the genres page looks like when exploring all the genres.
 </p>
 
-![all_generes.png](attachment:all_generes.png)
+<img src="images/9.png"/>
 
 <p>
 This is the page we found out there.
 </p>
 
-![List_of_generes.png](attachment:List_of_generes.png)
+<img src="images/10.png"/>
 
 <p>
 Inside a genre we could see the access to book links but we were not satisfied with the way we can access book link from the generes page - The coverWrapper class was too generic and we had no access to large amount of books.
 </p>
 
-![Book_cover.png](attachment:Book_cover.png)
+<img src="images/11.png"/>
 
 <p>
 Exploration of the genere page led to this button:
 </p>
 
-![more_books.png](attachment:more_books.png)
+<img src="images/12.png"/>
 
 <p>
 Which this link provided us with the solution to all of our problems.<br>
@@ -767,7 +767,7 @@ Example for a complete URL - <a href=https://www.goodreads.com/shelf/show/horror
 Moreover, accessing a book's page was easy from this page.
 Last but not least we knew exactly how many books to expect each page since each shelf page holds up to 50 books per page.
 
-![shelves_page.png](attachment:shelves_page.png)
+<img src="images/13.png"/>
 
 <a id='genre_spider'></a>
 <h3>Genre Spider Class</h3>
